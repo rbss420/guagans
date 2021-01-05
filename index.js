@@ -1,9 +1,9 @@
-const XPTN = 'T027BOT'; // Nama Bot Whatsapp
-const instagram = 'https://instagram.com/kingg_squard028'; // Nama Instagramlu cok
-const nomer = 'Wa.me/+6287775452636'; // Nomor whatsapplu cok
+const XPTN = 'RIBASBOT'; // Nama Bot Whatsapp
+const instagram = 'https://instagram.com/rbs.420'; // Nama Instagramlu cok
+const nomer = 'Wa.me/+6282193030283'; // Nomor whatsapplu cok
 const aktif = '24 JAM'; // Kapan bot lu aktif
-const groupwa = 'https://chat.whatsapp.com/DswgumiH36fJkuIrEO25KT'; // OFFICIAL GRUP LU 1
-const youtube = 'https://youtube.com/channel/UCnjYXfhCDV2m6aALPoF6_XA'; // OFFICIAL GRUP LU 2
+const groupwa = 'https://chat.whatsapp.com/C1JvL9GQCRG6q2qbUVUopm'; // OFFICIAL GRUP LU 1
+const youtube = 'https://chat.whatsapp.com/KBtc08gVbT42ZH0kFAxQx6'; // OFFICIAL GRUP LU 2
 //
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -74,7 +74,7 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @kingg_squard028`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @rbs.420`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
@@ -146,7 +146,7 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text, { quoted: m });
 }
 else if (text == '!owner'){
-conn.sendMessage(id, 'Owner T027BOT wa.me/+6287775452636' ,MessageType.text, { quoted: m });
+conn.sendMessage(id, 'Owner RIBASBOT wa.me/+6282193030283' ,MessageType.text, { quoted: m });
 }
 else if (text == 'bangsat'){
 conn.sendMessage(id, 'toxic terdeteksi' ,MessageType.text, { quoted: m });
@@ -1072,7 +1072,7 @@ axios.get(`https://arugaz.herokuapp.com/api/howbucins`).then((res) => {
 }
 if (text.includes("!selamat")){
 const teks = text.replace(/!selamat /, "")
-const say = (`*───❉ T027BOT ❉──*\n yeyy dapat tulisan selamat *${teks}* \n Selamat *${teks}* juga`)
+const say = (`*───❉ RIBASBOT ❉──*\n yeyy dapat tulisan selamat *${teks}* \n Selamat *${teks}* juga`)
 	conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳', MessageType.text, { quoted: m })
     conn.sendMessage(id, say ,MessageType.text);
 }
@@ -1125,7 +1125,7 @@ if (text.includes("!tinyurl")){
 const teks = text.replace(/!tinyurl /, "")
 axios.get(`https://tinyurl.com/api-create.php?url=${teks}`).then((res) => {
 	conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳', MessageType.text, { quoted: m })
-    let hasil = ` ───❉ T027BOT ❉──\n *Link yang diperpendek dengan tinyurl* \n\n *link:* _${res.data}_ `;
+    let hasil = ` ───❉ RIBASBOT ❉──\n *Link yang diperpendek dengan tinyurl* \n\n *link:* _${res.data}_ `;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m });
 })
 }
@@ -1701,10 +1701,10 @@ else if (text == '!foto'){
 conn.sendMessage(id, 'kirim !foto cewek/cowok\n\nContoh: !foto cewek' ,MessageType.text);
 }
 else if (text == '!help'){
-conn.sendMessage(id, '*Nih fitur/command yang ada di bot ini jika ada bug / yang tidak bisa mohon maaf ya sedang dalam pertahapan, Jika anda bingung silahkan ketik *!readmi* Thanks for use T027BOT*' ,MessageType.text, { quoted: m });
+conn.sendMessage(id, '*Nih fitur/command yang ada di bot ini jika ada bug / yang tidak bisa mohon maaf ya sedang dalam pertahapan, Jika anda bingung silahkan ketik *!readmi* Thanks for use RIBASBOT*' ,MessageType.text, { quoted: m });
 }
 //else if (text == '!help'){
-//conn.sendMessage(id, 'Thanks Telah Menggunakan BOT *T027BOT* , Subscribe Youtube Mimin : https://youtube.com/channel/UCnjYXfhCDV2m6aALPoF6_XA' ,MessageType.text);
+//conn.sendMessage(id, 'Thanks Telah Menggunakan BOT *RIBASBOT* , Subscribe Youtube Mimin : https://youtube.com/channel/UCnjYXfhCDV2m6aALPoF6_XA' ,MessageType.text);
 //}
    if (messageType == 'imageMessage')
    {
@@ -2507,7 +2507,7 @@ if (text.includes("!alay")){
 	})
 }
 
-//Tolonglah jangan DI UBAH UBAH ANJIM © Copyright T027BOT.
+//Tolonglah jangan DI UBAH UBAH ANJIM © Copyright RIBASBOT.
 
 
 })
